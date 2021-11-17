@@ -34,3 +34,12 @@ variable "records" {
   default     = []
 }
 
+variable "region" {
+  type    = string
+  default = "ap-southeast-1"
+}
+variable "extra_tags" {
+  type        = map(string)
+  default     = {}
+  description = "Add extra tags to your resource"
+}
